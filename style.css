@@ -120,3 +120,38 @@ hr{
     border-radius: 14.6913px;
     color: #FF4A60;
 }
+
+/* media queries */
+/* mobile devices */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .players , .blogs ,.courses{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        margin: 0 auto;
+    }
+    }
+    /* for tablet */
+@media only screen and (min-width:669px) and (max-width:991px) {
+    .container{
+        width: 100%;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .players ,.courses{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        margin: 0 auto;
+    }
+     .blogs {
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        margin: 0 auto;
+    }
+}
